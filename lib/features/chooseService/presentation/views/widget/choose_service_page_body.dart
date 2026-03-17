@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ghina/core/styles.dart';
+import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/chooseService/presentation/views/widget/custom_card.dart';
+import 'package:go_router/go_router.dart';
 
 class ChooseServicePageBody extends StatelessWidget {
   const ChooseServicePageBody({super.key});
@@ -72,22 +74,8 @@ class ChooseServicePageBody extends StatelessWidget {
             subTitle: 'تحليل مؤشرات الكفاءة والربحية',
             textColor: Color(0xff665C95),
           ),
-          SizedBox(height: 20),
-          Container(
-            height: 45,
-            width: 280,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(28),
-              color: Color(0xffCFA22E),
-            ),
-
-            child: Center(
-              child: Text(
-                "التالي",
-                style: Styles.textStyle24.copyWith(color: Colors.white),
-              ),
-            ),
-          ),
+          const SizedBox(height: 20),
+          CustomeBottom(title: 'التالي', onTap: () => context.push('/kpis')),
         ],
       ),
     );

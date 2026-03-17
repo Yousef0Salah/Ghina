@@ -3,6 +3,7 @@ import 'package:ghina/const.dart';
 import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_personal_zakat.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custom_card_person_zakat.dart';
+import 'package:go_router/go_router.dart';
 
 class PersonalZakatPageBody extends StatelessWidget {
   PersonalZakatPageBody({super.key});
@@ -54,7 +55,7 @@ class PersonalZakatPageBody extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          const CustomeBottom(),
+          CustomeBottom(onTap: () => context.push('/cach1')),
           const SizedBox(height: 20),
         ],
       ),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ghina/const.dart';
 import 'package:ghina/core/styles.dart';
+import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/chooseUser/presentation/views/widget/custom_choose.dart';
+import 'package:go_router/go_router.dart';
 
 class ChooseUserPageBody extends StatelessWidget {
   const ChooseUserPageBody({super.key});
@@ -48,20 +50,7 @@ class ChooseUserPageBody extends StatelessWidget {
               SizedBox(height: 80),
               CustomChoose(),
               SizedBox(height: 80),
-              Container(
-                height: 45,
-                width: 250,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(28),
-                  color: Color(0xffCFA22E),
-                ),
-                child: Center(
-                  child: Text(
-                    "متابعة",
-                    style: Styles.textStyle24.copyWith(color: Colors.white),
-                  ),
-                ),
-              ),
+              CustomeBottom(onTap: () => context.push('/chooseService')),
             ],
           ),
         ),

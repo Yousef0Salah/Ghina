@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ghina/features/login/presentation/views/widget/custom_bottom.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginPageBody extends StatelessWidget {
   const LoginPageBody({super.key});
@@ -16,7 +17,7 @@ class LoginPageBody extends StatelessWidget {
         children: [
           Image.asset('assets/image/Picsart_26-01-30_20-19-12-831 1.png'),
           CustomBottom(),
-          CustomBottom(),
+          CustomBottom(onTap: () => context.push('/chooseUser')),
         ],
       ),
     );

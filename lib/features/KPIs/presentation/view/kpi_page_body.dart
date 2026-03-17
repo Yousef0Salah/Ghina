@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/KPIs/data/card_info_model.dart';
 import 'package:ghina/features/KPIs/presentation/view/widget/custom_card_kpi.dart';
+import 'package:go_router/go_router.dart';
 
 class KpiPageBody extends StatelessWidget {
   KpiPageBody({super.key});
@@ -59,7 +60,7 @@ class KpiPageBody extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 30),
-        const CustomeBottom(),
+        CustomeBottom(onTap: () => context.push('/personalZakat')),
         const SizedBox(height: 50),
       ],
     );

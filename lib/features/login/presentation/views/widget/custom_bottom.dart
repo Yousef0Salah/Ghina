@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:ghina/core/styles.dart';
 
 class CustomBottom extends StatelessWidget {
-  const CustomBottom({super.key});
+  const CustomBottom({super.key, this.onTap});
 
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(12),
       child: GestureDetector(
-        onTap: () {
-          
-        },
+        onTap: onTap,
         child: Container(
           width: 333,
           height: 60,

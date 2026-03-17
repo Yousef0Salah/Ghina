@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:ghina/core/styles.dart';
+import 'package:ghina/core/widget/custome_botton_small.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_card_text_field.dart';
-import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/card_text_field.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custome_listVeiw.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/note_part.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/title_page.dart';
+import 'package:go_router/go_router.dart';
 
-class CachPhysicalassetsPageBody extends StatelessWidget {
-  CachPhysicalassetsPageBody({super.key});
+class Cach1PhysicalassetsPageBody extends StatelessWidget {
+  Cach1PhysicalassetsPageBody({super.key});
 
   final List<ModelCardTextField> cardInfo = [
     ModelCardTextField(
@@ -45,41 +46,8 @@ class CachPhysicalassetsPageBody extends StatelessWidget {
           const SizedBox(height: 30),
           const Divider(endIndent: 110, indent: 110, height: 1),
 
-          Expanded(
-            child: ListView.builder(
-              physics: NeverScrollableScrollPhysics(),
-              itemCount: cardInfo.length,
-              itemBuilder: (context, index) {
-                return CardTextField(
-                  title: cardInfo[index].title,
-                  subtitle: cardInfo[index].subtitle,
-                  note: cardInfo[index].note,
-                );
-              },
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Container(
-                width: 80,
-                height: 35,
-                decoration: BoxDecoration(
-                  color: const Color(0xffCFA22E),
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                child: Center(
-                  child: Text(
-                    'التالي',
-                    style: Styles.textStyle16.copyWith(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+          CustomeListveiw(cardInfo: cardInfo),
+          CustomeBottonSmall(onTap: () => context.push('/cach2')),
           const SizedBox(height: 30),
         ],
       ),
