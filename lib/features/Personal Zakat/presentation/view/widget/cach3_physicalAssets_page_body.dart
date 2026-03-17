@@ -47,7 +47,7 @@ class Cach3PhysicalassetsPageBody extends StatelessWidget {
           const SizedBox(height: 10),
           CustomeBottonSmall(
             title: 'متابعة',
-            onTap: () => context.push('/cach3'),
+            onTap: () => context.push('/assets'),
           ),
           const SizedBox(height: 20),
         ],

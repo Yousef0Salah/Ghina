@@ -1,4 +1,5 @@
 import 'package:ghina/features/KPIs/presentation/view/kpi_page.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/assets_heldForSale_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/cach1_physicalAssets_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/cach2_physicalAssets_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/cach3_physicalAssets_page.dart';
@@ -17,5 +18,6 @@ final GoRouter router = GoRouter(routes: [
   GoRoute(path: '/cach1', builder: (context, state) => Cach1PhysicalassetsPage(),),
   GoRoute(path: '/cach2', builder: (context, state) => Cach2PhysicalassetsPage(),),
   GoRoute(path: '/cach3', builder: (context, state) => Cach3PhysicalassetsPage(),),
+  GoRoute(path: '/assets', builder: (context, state) => AssetsHeldforsalePage(),),
 
 ]);
