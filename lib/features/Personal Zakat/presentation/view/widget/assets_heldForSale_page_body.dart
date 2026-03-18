@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ghina/core/widget/custome_botton_small.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/card_text_field.dart';
-import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custome_text_filed.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/note_part.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/title_page.dart';
+import 'package:go_router/go_router.dart';
 
 class AssetsHeldforsalePageBody extends StatelessWidget {
   const AssetsHeldforsalePageBody({super.key});
@@ -35,7 +35,7 @@ class AssetsHeldforsalePageBody extends StatelessWidget {
             note: '*إدخال بسعر البيع ',
           ),
           const SizedBox(height: 40),
-          CustomeBottonSmall(),
+          CustomeBottonSmall(onTap: () => context.push('/crops')),
         ],
       ),
     );
