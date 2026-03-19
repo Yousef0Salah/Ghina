@@ -1,6 +1,7 @@
 import 'package:ghina/features/KPIs/presentation/view/kpi_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/assets_heldForSale_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/cach1_physicalAssets_page.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/camal_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/crops_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock1_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock2_page.dart';
@@ -34,6 +35,7 @@ final GoRouter router = GoRouter(
     GoRoute(path: '/crops', builder: (context, state) => CropsPage()),
     GoRoute(path: '/livestock1', builder: (context, state) => Livestock1Page()),
     GoRoute(path: '/livestock2', builder: (context, state) => Livestock2Page()),
+    GoRoute(path: '/camal', builder: (context, state) => CamalPage()),
 
   ],
 );

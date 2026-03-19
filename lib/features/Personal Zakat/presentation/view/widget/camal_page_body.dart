@@ -5,8 +5,8 @@ import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/section
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/title_page.dart';
 import 'package:go_router/go_router.dart';
 
-class Livestock2PageBody extends StatelessWidget {
-  const Livestock2PageBody({super.key});
+class CamalPageBody extends StatelessWidget {
+  const CamalPageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,25 +17,24 @@ class Livestock2PageBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           TitlePage(
-            icon: 'assets/image/Personal Zakat/cow.png',
-            title: 'الأبقار والأغنام',
+            icon: 'assets/image/Personal Zakat/camel.png',
+            title: 'الإبل',
           ),
           const SizedBox(height: 90),
-          CustomeParagragh(title: 'الأبقار'),
+          CustomeParagragh(title: 'الإبل'),
           richText(
             before: 'على كل',
-            highlight: ' 30 ',
-            after: 'تخرج تبيع او تبيعة',
-            note: ' (بقرة عمرها سنة سواء ذكر او انثى) ',
+            highlight: ' 5 ',
+            after: 'من الإبل تخرج واحدة انثى .',
           ),
           richText(
-            before: 'على كل',
-            highlight: ' 40 ',
-            after: 'تخرج مُسنّة',
-            note: ' (انثى عمرها سنتين) ',
+            before: 'ولا تخرج الزكاة في صورة إبل إلا إذا تخطى عددهم',
+            highlight: ' 25 ',
+            color: Colors.red,
+            after: 'فإذا كان العدد اقل تخرج قيمة الإبل',
           ),
           const SizedBox(height: 50),
-          CustomeBottonSmall(title: 'متابعة',onTap: () => context.push('/camal'),),
+          CustomeBottonSmall(onTap: () => context.push('/livestock2')),
         ],
       ),
     );

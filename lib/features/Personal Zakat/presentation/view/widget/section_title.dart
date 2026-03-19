@@ -30,6 +30,7 @@ Widget richText({
   required String highlight,
   required String after,
   String? note,
+  Color? color,
 }) {
   return Text.rich(
     TextSpan(
@@ -37,7 +38,7 @@ Widget richText({
         TextSpan(text: before, style: Styles.bold12),
         TextSpan(
           text: highlight,
-          style: Styles.bold12.copyWith(color: Colors.green),
+          style: Styles.bold12.copyWith(color: color ?? Colors.green),
         ),
         TextSpan(text: after, style: Styles.bold12),
         TextSpan(text: note, style: Styles.bold12.copyWith(color: Color(0xff717171)))
