@@ -13,12 +13,12 @@ class TitlePage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(icon, width: 80, height: 80),
-          const SizedBox(width: 40),
+          Image.asset(icon, width: 120),
+          const SizedBox(width: 30),
           Expanded(
             child: Text(
               title,
-              style: Styles.textStyle30,
+              style: Styles.black24,
               textAlign: TextAlign.center,
             ),
           ),

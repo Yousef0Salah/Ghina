@@ -11,7 +11,7 @@ class CustomeListveiw extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
             child: ListView.builder(
-              physics: NeverScrollableScrollPhysics(),
+              // physics: NeverScrollableScrollPhysics(),
               itemCount: cardInfo.length,
               itemBuilder: (context, index) {
                 return CardTextField(

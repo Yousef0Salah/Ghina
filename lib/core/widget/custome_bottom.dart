@@ -20,7 +20,7 @@ class CustomeBottom extends StatelessWidget {
         child: Center(
           child: Text(
             title ?? "متابعة",
-            style: Styles.textStyle24.copyWith(color: Colors.white),
+            style: Styles.bold24.copyWith(fontFamily: 'Cairo'),
           ),
         ),
       ),

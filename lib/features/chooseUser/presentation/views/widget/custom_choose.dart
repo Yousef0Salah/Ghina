@@ -14,21 +14,21 @@ class CustomChoose extends StatelessWidget {
           children: [
             CustomIcon(icon: Icons.person, color: Color(0xff1E3A8A)),
             SizedBox(height: 10),
-            Text('فرد', style: Styles.textStyle20),
+            Text('فرد', style: Styles.semiBold18),
           ],
         ),
         Column(
           children: [
             CustomIcon(icon: Icons.apartment, color: Colors.black),
             SizedBox(height: 10),
-            Text('شركة', style: Styles.textStyle20),
+            Text('شركة', style: Styles.semiBold18),
           ],
         ),
         Column(
           children: [
             CustomIcon(icon: Icons.store, color: Color(0xff166534)),
             SizedBox(height: 10),
-            Text('م.صغيرة', style: Styles.textStyle20),
+            Text('م.صغيرة', style: Styles.semiBold18),
           ],
         ),
       ],

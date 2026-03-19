@@ -38,7 +38,7 @@ class CustomCardPersonZakat extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: Styles.textStyle14.copyWith(color: Colors.black),
+                      style: Styles.black14.copyWith(fontFamily: 'Cairo'),
                     ),
                   ],
                 ),
@@ -48,6 +48,5 @@ class CustomCardPersonZakat extends StatelessWidget {
         ),
       ),
     );
-    
   }
 }

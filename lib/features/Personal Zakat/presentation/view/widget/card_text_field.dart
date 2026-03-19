@@ -30,7 +30,6 @@ class CardTextField extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // TextField للأرقام
-              
               const CustomeTextFiled(),
 
               const SizedBox(width: 20),
@@ -43,7 +42,7 @@ class CardTextField extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: Styles.textStyle14.copyWith(
+                      style: Styles.bold12.copyWith(
                         fontWeight: FontWeight.w900,
                       ),
 
@@ -54,7 +53,7 @@ class CardTextField extends StatelessWidget {
                       subtitle,
                       softWrap: true,
                       maxLines: 3,
-                      style: Styles.textStyle12.copyWith(
+                      style: Styles.semiBold12.copyWith(
                         fontFamily: 'Cairo',
                         color: const Color(0xff717171),
                       ),
@@ -64,7 +63,7 @@ class CardTextField extends StatelessWidget {
                       note ?? '',
                       softWrap: true,
                       maxLines: 3,
-                      style: Styles.textStyle12.copyWith(
+                      style: Styles.extraBold10.copyWith(
                         fontFamily: 'Cairo',
                         color: Colors.red,
                       ),

@@ -24,6 +24,30 @@ class Cach1PhysicalassetsPageBody extends StatelessWidget {
       subtitle: '(مثل: الوعد-ربط الكلام)',
       note: '*عدم إدخال ما تشك في تحصيله، بسبب مماطلة أوتعثر متوقع',
     ),
+    ModelCardTextField(
+      title: 'وديعة بنكية (بنك إسلامي)',
+      subtitle: '(إدخال أصل المبلغ بالإضافة لأرباح الوديعة)',
+    ),
+    ModelCardTextField(
+      title: 'سندات أو أي أدوات استثمار قائمة على الدين',
+      subtitle: '(إدخال أصل المبلغ فقط بدون الفوائد)',
+    ),
+    ModelCardTextField(
+      title: 'ذهب ومعادن',
+      subtitle: '(إدخال قيمتها إذا كانت بغرض الإدخار أو البيع)',
+    ),
+    ModelCardTextField(
+      title: 'أموال في حساب بنكي أو محفظة إلكترونية',
+      subtitle: '(مثل: حساب جاري، حساب توفير، فودافون كاش، إنستا باي…)',
+    ),
+    ModelCardTextField(
+      title: 'ما تحتفظ به من مبالغ نقدية خارج البنك',
+      subtitle: '(مثل أموال محفوظة في المنزل أو بالخزنة)',
+    ),
+    ModelCardTextField(
+      title: 'وديعة بنكية (بنك تقليدي)',
+      subtitle: '(إدخال أصل المبلغ فقط بدون الفوائد البنكية)',
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -47,7 +71,8 @@ class Cach1PhysicalassetsPageBody extends StatelessWidget {
           const Divider(endIndent: 110, indent: 110, height: 1),
 
           CustomeListveiw(cardInfo: cardInfo),
-          CustomeBottonSmall(onTap: () => context.push('/cach2')),
+          const SizedBox(height: 20),
+          CustomeBottonSmall(onTap: () => context.push('/assets')),
           const SizedBox(height: 30),
         ],
       ),

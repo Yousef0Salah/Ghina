@@ -11,7 +11,7 @@ class NotePart extends StatelessWidget {
       children: [
         const Text(
           'ملاحظة مهمة:',
-          style: Styles.textStyle14,
+          style: Styles.black14,
           textAlign: TextAlign.end,
         ),
 
@@ -19,7 +19,7 @@ class NotePart extends StatelessWidget {
 
         Text.rich(
           TextSpan(
-            style: Styles.textStyle14,
+            style: Styles.black12,
             children: [
               const TextSpan(
                 text:
@@ -27,9 +27,9 @@ class NotePart extends StatelessWidget {
               ),
               TextSpan(
                 text: '0 صفر',
-                style: Styles.textStyle14.copyWith(color: Colors.red),
+                style: Styles.black12.copyWith(color: Colors.red),
               ),
-              const TextSpan(text: ' في مربع الإدخال.'),
+              const TextSpan(text: ' في مربع الإدخال'),
             ],
           ),
           textAlign: TextAlign.end,
@@ -39,7 +39,7 @@ class NotePart extends StatelessWidget {
 
         Text.rich(
           TextSpan(
-            style: Styles.textStyle14,
+            style: Styles.black12,
             children: [
               const TextSpan(
                 text:
@@ -47,7 +47,7 @@ class NotePart extends StatelessWidget {
               ),
               TextSpan(
                 text: 'القيمة المتوسطة التقديرية',
-                style: Styles.textStyle14.copyWith(color: Colors.green),
+                style: Styles.black12.copyWith(color: Colors.green),
               ),
               const TextSpan(text: '.'),
             ],

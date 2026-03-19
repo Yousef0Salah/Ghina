@@ -1,9 +1,9 @@
 import 'package:ghina/features/KPIs/presentation/view/kpi_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/assets_heldForSale_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/cach1_physicalAssets_page.dart';
-import 'package:ghina/features/Personal%20Zakat/presentation/view/cach2_physicalAssets_page.dart';
-import 'package:ghina/features/Personal%20Zakat/presentation/view/cach3_physicalAssets_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/crops_page.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock1_page.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock2_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/personal_zakat_page.dart';
 import 'package:ghina/features/chooseService/presentation/views/choose_service_page.dart';
 import 'package:ghina/features/chooseUser/presentation/views/choose_user_page.dart';
@@ -28,17 +28,12 @@ final GoRouter router = GoRouter(
       builder: (context, state) => Cach1PhysicalassetsPage(),
     ),
     GoRoute(
-      path: '/cach2',
-      builder: (context, state) => Cach2PhysicalassetsPage(),
-    ),
-    GoRoute(
-      path: '/cach3',
-      builder: (context, state) => Cach3PhysicalassetsPage(),
-    ),
-    GoRoute(
       path: '/assets',
       builder: (context, state) => AssetsHeldforsalePage(),
     ),
     GoRoute(path: '/crops', builder: (context, state) => CropsPage()),
+    GoRoute(path: '/livestock1', builder: (context, state) => Livestock1Page()),
+    GoRoute(path: '/livestock2', builder: (context, state) => Livestock2Page()),
+
   ],
 );

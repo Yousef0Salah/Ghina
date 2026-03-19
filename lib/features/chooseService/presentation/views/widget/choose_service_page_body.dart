@@ -16,9 +16,15 @@ class ChooseServicePageBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: 100),
-          const Text('خدمات المؤسسة', style: Styles.textStyle24),
+          Text(
+            'خدمات المؤسسة',
+            style: Styles.bold24.copyWith(color: Color(0xff142B55)),
+          ),
           const SizedBox(height: 10),
-          const Text('اختر الخدمة التي ترغب في البدء بها'),
+          const Text(
+            'اختر الخدمة التي ترغب في البدء بها',
+            style: Styles.semiBold14,
+          ),
           SizedBox(height: 15),
           Row(
             children: [

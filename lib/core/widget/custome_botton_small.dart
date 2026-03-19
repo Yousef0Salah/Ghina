@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ghina/core/styles.dart';
 
 class CustomeBottonSmall extends StatelessWidget {
-  const CustomeBottonSmall({super.key, this.onTap,  this.title});
+  const CustomeBottonSmall({super.key, this.onTap, this.title});
 
   final String? title;
   final void Function()? onTap;
@@ -23,7 +23,7 @@ class CustomeBottonSmall extends StatelessWidget {
             child: Center(
               child: Text(
                 title ?? 'التالي',
-                style: Styles.textStyle16.copyWith(
+                style: Styles.bold14.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),

@@ -1,12 +1,71 @@
 import 'package:flutter/widgets.dart';
 
 abstract class Styles {
-  static const textStyle10 = TextStyle(
-    fontSize: 10,
-    fontFamily: 'Cairo',
-    color: Color(0xffAFA589),
+  //----------24------------
+  static const bold24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: Color(0xffffffff),
     decoration: TextDecoration.none,
   );
+  static const black24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w900,
+    color: Color(0xff000000),
+  );
+  static const semiBold18 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    color: Color(0xff000000),
+  );
+
+  //----------14------------
+  static const semiBold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+  );
+  static const bold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    decoration: TextDecoration.none,
+  );
+  static const black14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w900,
+    color: Color(0xff000000),
+    decoration: TextDecoration.none,
+  );
+
+  //----------12------------
+  static const medium12 = TextStyle(fontSize: 12, fontWeight: FontWeight.w500);
+  static const semiBold12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+  );
+  static const bold12 = TextStyle(fontSize: 12, fontWeight: FontWeight.bold);
+  static const black12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w900,
+    color: Color(0xff000000),
+  );
+
+  //----------10------------
+  static const regular10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+    decoration: TextDecoration.none,
+  );
+  static const semiBold10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w600,
+    color: Color(0xff717171),
+  );
+  static const extraBold10 = TextStyle(
+    fontSize: 10,
+    fontWeight: FontWeight.w800,
+  );
+
+ 
 
   static const textStyle12 = TextStyle(
     fontSize: 12,
@@ -14,42 +73,4 @@ abstract class Styles {
     fontWeight: FontWeight.w900,
   );
 
-  static const textStyle14 = TextStyle(
-    fontSize: 14,
-    fontFamily: 'Cairo',
-    fontWeight: FontWeight.bold,
-    decoration: TextDecoration.none,
-  );
-
-  static const textStyle16 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-    decoration: TextDecoration.none,
-  );
-
-  static const textStyle18 = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.w600,
-    decoration: TextDecoration.none,
-  );
-
-  static const textStyle20 = TextStyle(
-    fontSize: 20,
-    fontWeight: FontWeight.w600,
-    decoration: TextDecoration.none,
-  );
-
-  static const textStyle24 = TextStyle(
-    fontSize: 24,
-    // fontWeight: FontWeight.bold,
-    fontFamily: 'Cairo',
-
-    decoration: TextDecoration.none,
-  );
-
-  static const textStyle30 = TextStyle(
-    fontSize: 30,
-    fontWeight: FontWeight.w900,
-    decoration: TextDecoration.none,
-  );
 }

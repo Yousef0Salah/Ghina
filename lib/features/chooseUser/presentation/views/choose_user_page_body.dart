@@ -43,7 +43,7 @@ class ChooseUserPageBody extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "يرجى تحديد الفئة المناسبة",
-                    style: Styles.textStyle24.copyWith(color: Colors.white),
+                    style: Styles.bold24,
                   ),
                 ),
               ),

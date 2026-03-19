@@ -24,7 +24,7 @@ class CustomBottom extends StatelessWidget {
           child: Center(
             child: Text(
               'تسجيل دخول',
-              style: Styles.textStyle24.copyWith(color: Colors.white),
+              style: Styles.bold24,
             ),
           ),
         ),

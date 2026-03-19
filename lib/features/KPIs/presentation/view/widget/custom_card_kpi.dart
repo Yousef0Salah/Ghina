@@ -40,14 +40,18 @@ class CustomCardKpi extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: Styles.textStyle14.copyWith(color: Colors.black),
+                      style: Styles.bold14.copyWith(
+                        fontFamily: 'Cairo',
+                        color: Color(0xff000000),
+                      ),
                     ),
                     // const SizedBox(height: 4),
                     Text(
                       subTitle,
                       textAlign: TextAlign.right,
-                      style: Styles.textStyle10.copyWith(
-                        color: const Color(0xff6B7280),
+                      style: Styles.regular10.copyWith(
+                        fontFamily: 'Cairo',
+                        color: const Color.fromARGB(255, 82, 87, 97),
                       ),
                     ),
                   ],

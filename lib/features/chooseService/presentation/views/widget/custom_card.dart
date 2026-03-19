@@ -40,7 +40,7 @@ class CustomCard extends StatelessWidget {
               padding: const EdgeInsets.only(top: 5),
               child: Image.asset(image),
             ),
-            Text(title, style: Styles.textStyle14.copyWith(color: textColor)),
+            Text(title, style: Styles.bold14.copyWith(color: textColor)),
             SizedBox(height: 10),
             Divider(
               thickness: 1,
@@ -49,7 +49,10 @@ class CustomCard extends StatelessWidget {
               endIndent: 10,
               indent: 10,
             ),
-            Text(subTitle, style: Styles.textStyle10),
+            Text(
+              subTitle,
+              style: Styles.regular10.copyWith(color: Color(0xffAFA589)),
+            ),
           ],
         ),
       ),

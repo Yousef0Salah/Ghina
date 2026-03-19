@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ghina/const.dart';
-import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/cach3_physicalAssets_page_body.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/livestock2_page_body.dart';
 
-class Cach3PhysicalassetsPage extends StatelessWidget {
-  const Cach3PhysicalassetsPage({super.key});
+class Livestock2Page extends StatelessWidget {
+  const Livestock2Page({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +12,9 @@ class Cach3PhysicalassetsPage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: bacgroundcolor,
         ),
-        child: Cach3PhysicalassetsPageBody(),
+        child: Livestock2PageBody(),
       ),
+      
     );
   }
 }
