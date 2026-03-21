@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ghina/core/widget/safe_screen.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/personal_zakat_page_body.dart';
 
 class PersonalZakatPage extends StatelessWidget {
@@ -6,6 +7,6 @@ class PersonalZakatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PersonalZakatPageBody();
+    return SafeScreen(child: PersonalZakatPageBody());
   }
 }

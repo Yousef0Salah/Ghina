@@ -43,8 +43,8 @@ class KpiPageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        const SizedBox(height: 100),
         SizedBox(
           height: 600,
           child: ListView.builder(

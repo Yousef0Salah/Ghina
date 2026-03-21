@@ -36,29 +36,26 @@ class PersonalZakatPageBody extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(gradient: bacgroundcolor),
-      child: Column(
-        children: [
-          Image.asset('assets/image/Personal Zakat/image 1.png'),
-          SizedBox(
-            height: 500,
-            child: ListView.builder(
-              physics: NeverScrollableScrollPhysics(),
-              itemCount: cardInfo.length,
-              itemBuilder: (context, index) {
-                return CustomCardPersonZakat(
-                  image: cardInfo[index].image,
-                  title: cardInfo[index].title,
-                );
-              },
-            ),
+    return Column(
+      children: [
+        Image.asset('assets/image/Personal Zakat/image 1.png'),
+        SizedBox(
+          height: 500,
+          child: ListView.builder(
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: cardInfo.length,
+            itemBuilder: (context, index) {
+              return CustomCardPersonZakat(
+                image: cardInfo[index].image,
+                title: cardInfo[index].title,
+              );
+            },
           ),
-          const SizedBox(height: 10),
-          CustomeBottom(onTap: () => context.push('/cach1')),
-          const SizedBox(height: 20),
-        ],
-      ),
+        ),
+        const SizedBox(height: 10),
+        CustomeBottom(onTap: () => context.push('/cach1')),
+        const SizedBox(height: 20),
+      ],
     );
   }
 }

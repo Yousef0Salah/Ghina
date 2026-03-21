@@ -6,8 +6,8 @@ import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/note_pa
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/title_page.dart';
 import 'package:go_router/go_router.dart';
 
-class AssetsHeldforsalePageBody extends StatelessWidget {
-  const AssetsHeldforsalePageBody({super.key});
+class DebtsPageBody extends StatelessWidget {
+  const DebtsPageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +18,9 @@ class AssetsHeldforsalePageBody extends StatelessWidget {
           SizedBox(height: 94.h),
           // الصورة والنص الرئيسي
           TitlePage(
-            icon: 'assets/image/Personal Zakat/cart-package-ribbon.png',
-            title: 'الأصول المعدة للبيع\n(عروض التجارة)',
+            icon: 'assets/image/Personal Zakat/payment.png',
+            title: 'الديون و الالتزامات',
+            sizeBox: 0,
           ),
           const SizedBox(height: 50),
 
@@ -29,9 +30,8 @@ class AssetsHeldforsalePageBody extends StatelessWidget {
           const Divider(endIndent: 110, indent: 110, height: 1),
           const SizedBox(height: 40),
           CardTextField(
-            title: 'ممتلكات بغرض البيع',
-            subtitle: '(مثل: سيارات-منزل-حيوانات-زروع-أثاث-آلات-...)',
-            note: '*إدخال بسعر البيع ',
+            title: 'ديون وإلتزامات مستحقة للغير',
+            subtitle: '(إدخال ما يخص عام الحول فقط)',
           ),
           const SizedBox(height: 40),
           CustomeBottonSmall(onTap: () => context.push('/crops')),

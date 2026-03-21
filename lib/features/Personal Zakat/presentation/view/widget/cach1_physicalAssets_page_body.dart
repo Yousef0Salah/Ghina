@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ghina/core/widget/custome_botton_small.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_card_text_field.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custome_listVeiw.dart';
@@ -52,12 +53,10 @@ class Cach1PhysicalassetsPageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16).w,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 30),
+          SizedBox(height: 94.h),
           // الصورة والنص الرئيسي
           TitlePage(
             icon: 'assets/image/Personal Zakat/money-coin-cash.png',

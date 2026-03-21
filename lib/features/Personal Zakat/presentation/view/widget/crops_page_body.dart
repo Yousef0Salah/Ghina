@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ghina/core/styles.dart';
 import 'package:ghina/core/widget/custome_botton_small.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/title_page.dart';
@@ -10,11 +11,10 @@ class CropsPageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0).w,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          SizedBox(height: 94.h),
           TitlePage(
             icon: 'assets/image/Personal Zakat/money-flower.png',
             title: ' الزروع والثمار',

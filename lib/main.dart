@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ghina/app_router.dart';
 
 void main() {
@@ -10,10 +11,17 @@ class GHINA extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: router,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'Cairo'),
+    return ScreenUtilInit(
+      designSize: const Size(430, 932),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (_, child) {
+        return MaterialApp.router(
+          routerConfig: router,
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(fontFamily: 'Cairo'),
+        );
+      },
     );
   }
 }
