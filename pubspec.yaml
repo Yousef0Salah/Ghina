@@ -55,6 +55,7 @@ flutter:
     - assets/image/KPIs/
     - assets/font/Cairo/
     - assets/image/Personal Zakat/
+    - assets/image/Corporate Zakat/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see

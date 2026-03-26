@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ghina/app_router.dart';
 import 'package:ghina/core/widget/custome_botton_small.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_card_text_field.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custome_listVeiw.dart';
@@ -52,29 +53,26 @@ class Cach1PhysicalassetsPageBody extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16).w,
-      child: Column(
-        children: [
-          SizedBox(height: 94.h),
-          // الصورة والنص الرئيسي
-          TitlePage(
-            icon: 'assets/image/Personal Zakat/money-coin-cash.png',
-            title: 'النقد والأرصدة \nالمالية',
-          ),
-          const SizedBox(height: 50),
+    return Column(
+      children: [
+        SizedBox(height: 94.h),
+        // الصورة والنص الرئيسي
+        TitlePage(
+          icon: 'assets/image/Personal Zakat/money-coin-cash.png',
+          title: 'النقد والأرصدة \nالمالية',
+        ),
+        const SizedBox(height: 50),
 
-          // الملاحظات المهمة
-          const NotePart(),
-          const SizedBox(height: 30),
-          const Divider(endIndent: 110, indent: 110, height: 1),
+        // الملاحظات المهمة
+        const NotePart(),
+        const SizedBox(height: 30),
+        const Divider(endIndent: 110, indent: 110, height: 1),
 
-          CustomeListveiw(cardInfo: cardInfo),
-          const SizedBox(height: 20),
-          CustomeBottonSmall(onTap: () => context.push('/assets')),
-          const SizedBox(height: 30),
-        ],
-      ),
+        CustomeListveiw(cardInfo: cardInfo),
+        const SizedBox(height: 20),
+        CustomeBottonSmall(onTap: () => context.push(AppRouter.assets)),
+        const SizedBox(height: 30),
+      ],
     );
   }
 }

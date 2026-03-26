@@ -35,13 +35,16 @@ Widget richText({
   return Text.rich(
     TextSpan(
       children: [
-        TextSpan(text: before, style: Styles.bold12),
+        TextSpan(text: before, style: Styles.black12),
         TextSpan(
           text: highlight,
-          style: Styles.bold12.copyWith(color: color ?? Colors.green),
+          style: Styles.black14.copyWith(color: color ?? Colors.green),
         ),
-        TextSpan(text: after, style: Styles.bold12),
-        TextSpan(text: note, style: Styles.bold12.copyWith(color: Color(0xff717171)))
+        TextSpan(text: after, style: Styles.black12),
+        TextSpan(
+          text: note,
+          style: Styles.black12.copyWith(color: Color(0xff717171)),
+        ),
       ],
     ),
     textAlign: TextAlign.right,

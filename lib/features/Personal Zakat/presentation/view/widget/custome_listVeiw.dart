@@ -4,7 +4,7 @@ import 'package:ghina/features/Personal%20Zakat/data/model_card_text_field.dart'
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/card_text_field.dart';
 
 class CustomeListveiw extends StatelessWidget {
-   CustomeListveiw({super.key,required this.cardInfo});
+   const CustomeListveiw({super.key,required this.cardInfo});
 
   final List<ModelCardTextField> cardInfo;
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ghina/const.dart';
+import 'package:ghina/app_router.dart';
 import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_personal_zakat.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custom_card_person_zakat.dart';
@@ -8,28 +8,28 @@ import 'package:go_router/go_router.dart';
 class PersonalZakatPageBody extends StatelessWidget {
   PersonalZakatPageBody({super.key});
 
-  final List<ModelPersonalZakat> cardInfo = [
-    ModelPersonalZakat(
+  final List<ModelCardZakat> cardInfo = [
+    ModelCardZakat(
       image: 'assets/image/Personal Zakat/money-coin-cash.png',
       title: 'النقد والأرصدة المالية',
     ),
-    ModelPersonalZakat(
+    ModelCardZakat(
       image: 'assets/image/Personal Zakat/cart-package-ribbon.png',
       title: 'الأصول المعدة للبيع ( عروض التجارة )',
     ),
-    ModelPersonalZakat(
+    ModelCardZakat(
       title: 'الزروع والثمار',
       image: 'assets/image/Personal Zakat/money-flower.png',
     ),
-    ModelPersonalZakat(
+    ModelCardZakat(
       image: 'assets/image/Personal Zakat/cow.png',
       title: 'البقر والغنم',
     ),
-    ModelPersonalZakat(
+    ModelCardZakat(
       title: 'الإبل',
       image: 'assets/image/Personal Zakat/camel.png',
     ),
-    ModelPersonalZakat(
+    ModelCardZakat(
       image: 'assets/image/Personal Zakat/payment.png',
       title: 'الديون والإلتزامات للغير',
     ),
@@ -53,7 +53,7 @@ class PersonalZakatPageBody extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        CustomeBottom(onTap: () => context.push('/cach1')),
+        CustomeBottom(onTap: () => context.push(AppRouter.cach1)),
         const SizedBox(height: 20),
       ],
     );

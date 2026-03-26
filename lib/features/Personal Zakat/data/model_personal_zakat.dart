@@ -1,7 +1,6 @@
-class ModelPersonalZakat {
+class ModelCardZakat {
   final String image;
   final String title;
 
-  const ModelPersonalZakat({required this.image, required this.title});
+  const ModelCardZakat({required this.image, required this.title});
 }
-
