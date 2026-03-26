@@ -5,6 +5,7 @@ import 'package:ghina/features/Personal%20Zakat/presentation/view/camal_page.dar
 import 'package:ghina/features/Personal%20Zakat/presentation/view/corporate_zakat_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/crops_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/debts_page.dart';
+import 'package:ghina/features/Personal%20Zakat/presentation/view/fixed_assets_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock1_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/livestock2_page.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/personal_zakat_page.dart';
@@ -27,7 +28,7 @@ class AppRouter {
   static const String camal = '/camal';
   static const String debts = '/debts';
   static const String corporateZakat = '/corporateZakat';
-  // static const String = '/';
+  static const String fixedAssets = '/fixedAssets';
   // static const String = '/';
   // static const String = '/';
   // static const String = '/';
@@ -72,6 +73,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: AppRouter.corporateZakat,
       builder: (context, state) => CorporateZakatPage(),
+    ),
+    GoRoute(
+      path: AppRouter.fixedAssets,
+      builder: (context, state) => FixedAssetsPage(),
     ),
   ],
 );

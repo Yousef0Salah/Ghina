@@ -6,13 +6,15 @@ class CardTextField extends StatelessWidget {
   const CardTextField({
     super.key,
     required this.title,
-    required this.subtitle,
+    this.subtitle,
     this.note,
+    this.act = true,
   });
 
   final String title;
-  final String subtitle;
+  final String? subtitle;
   final String? note;
+  final bool act ;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -22,7 +24,7 @@ class CardTextField extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: const Color(0xffFABC3D),
+          color: act ? const Color(0xffFABC3D) : const Color(0xffE8E2E2),
         ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -30,7 +32,7 @@ class CardTextField extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // TextField للأرقام
-              const CustomeTextFiled(),
+              act ? const CustomeTextFiled() : Container(),
 
               const SizedBox(width: 20),
 
@@ -50,7 +52,7 @@ class CardTextField extends StatelessWidget {
                     ),
                     const SizedBox(height: 5),
                     Text(
-                      subtitle,
+                      subtitle ?? 'لا تدخل في حساب الزكاة',
                       softWrap: true,
                       maxLines: 3,
                       style: Styles.semiBold12.copyWith(

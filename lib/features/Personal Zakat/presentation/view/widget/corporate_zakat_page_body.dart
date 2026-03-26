@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ghina/app_router.dart';
 import 'package:ghina/core/styles.dart';
 import 'package:ghina/core/widget/custome_bottom.dart';
 import 'package:ghina/features/Personal%20Zakat/data/model_personal_zakat.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/custom_card_person_zakat.dart';
 import 'package:ghina/features/Personal%20Zakat/presentation/view/widget/section_title.dart';
+import 'package:go_router/go_router.dart';
 
 final List<ModelCardZakat> cardInfo = const [
   ModelCardZakat(
-    image: 'assets/image/Corporate Zakat/twemoji_classical-building.png',
+    image: 'assets/image/Corporate Zakat/twemoji_office-building.png',
     title: 'الأصول الثابتة',
   ),
   ModelCardZakat(
@@ -16,7 +18,7 @@ final List<ModelCardZakat> cardInfo = const [
     title: 'الأصول المتداولة',
   ),
   ModelCardZakat(
-    image: 'assets/image/Corporate Zakat/twemoji_office-building.png',
+    image: 'assets/image/Corporate Zakat/twemoji_classical-building.png',
     title: 'الإلتزامات الثابتة',
   ),
   ModelCardZakat(
@@ -101,7 +103,7 @@ class CorporateZakatPageBody extends StatelessWidget {
             },
           ),
         ),
-        CustomeBottom(),
+        CustomeBottom(onTap: () => context.push(AppRouter.fixedAssets),),
         SizedBox(height: 28.h),
       ],
     );

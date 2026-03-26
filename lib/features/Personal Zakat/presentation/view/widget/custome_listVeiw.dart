@@ -18,6 +18,7 @@ class CustomeListveiw extends StatelessWidget {
                   title: cardInfo[index].title,
                   subtitle: cardInfo[index].subtitle,
                   note: cardInfo[index].note,
+                  act: cardInfo[index].act!,
                 );
               },
             ),
